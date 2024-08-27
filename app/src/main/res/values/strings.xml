@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CalendarTry2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- + 버튼에 대한 접근성 설명 -->
+    <string name="add_button_description">새 항목 추가</string>
+    <!-- 날짜 포맷을 위한 문자열 리소스 -->
+    <string name="date_pattern">yyyy년 MM월 dd일</string>
+    <string name="close_popup">Close</string>
+    <string name="task_hint">할 일 입력</string>
+    <string name="set_time">시간 설정</string>
+    <string name="no_time_set">시간 설정 안 함</string>
+    <string name="register">등록</string>
+    <string name="delete">삭제</string>
+    <string name="add_task">추가하기</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="day_of_week_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="calendar_date_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="calendar_date_tv">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/bg_date_selected</item> <!-- 날짜 선택 시의 배경 -->
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/transparent</item>
+    </style>
+
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#252323</item>
+        <item name="colorControlActivated">#252323</item>
+        <item name="android:timePickerStyle">@style/CustomTimePicker</item>
+    </style>
+
+    <style name="CustomTimePicker" parent="android:Widget.Material.TimePicker">
+        <item name="android:headerBackground">#252323</item>
+        <item name="android:numbersTextColor">#252323</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:textColorHint">#80252323</item> <!-- 힌트 텍스트 색상 -->
+        <item name="android:textColor">#252323</item> <!-- 입력된 텍스트 색상 -->
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:background">@android:color/transparent</item> <!-- 배경색을 투명으로 설정 -->
+        <item name="android:textColor">@android:color/black</item>        <!-- 글자 색상을 검은색으로 설정 -->
+    </style>
+</resources>

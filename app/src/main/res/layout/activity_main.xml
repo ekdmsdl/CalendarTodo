@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_top_date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="선택한 날짜"/>
+
+    <LinearLayout
+        android:id="@+id/main_weekly_calendar_day_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_top_date_tv">
+        <TextView
+            android:id="@+id/home_day_of_week_sun_tv"
+            style="@style/day_of_week_tv"
+            android:text="월"/>
+        <TextView
+            android:id="@+id/home_day_of_week_mon_tv"
+            style="@style/day_of_week_tv"
+            android:text="화"/>
+        <TextView
+            android:id="@+id/home_day_of_week_tue_tv"
+            style="@style/day_of_week_tv"
+            android:text="수"/>
+        <TextView
+            android:id="@+id/home_day_of_week_wed_tv"
+            style="@style/day_of_week_tv"
+            android:text="목"/>
+        <TextView
+            android:id="@+id/home_day_of_week_thu_tv"
+            style="@style/day_of_week_tv"
+            android:text="금"/>
+        <TextView
+            android:id="@+id/home_day_of_week_fri_tv"
+            style="@style/day_of_week_tv"
+            android:text="토"/>
+        <TextView
+            android:id="@+id/home_day_of_week_sat_tv"
+            style="@style/day_of_week_tv"
+            android:text="일"/>
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/main_weekly_calendar_date_vp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_weekly_calendar_day_ll"/>
+
+    <!-- RecyclerView 추가 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@id/addButton"
+        app:layout_constraintTop_toBottomOf="@+id/main_weekly_calendar_date_vp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/taskContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/addButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="148dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/add_task"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

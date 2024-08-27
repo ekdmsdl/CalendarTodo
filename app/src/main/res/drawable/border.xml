@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/lightgray"/> <!-- 배경색 -->
+    <!-- 테두리 색상 -->
+    <corners android:radius="5dp"/> <!-- 모서리 둥글기 -->
+    <padding
+        android:left="8dp"
+        android:right="8dp"
+        android:top="8dp"
+        android:bottom="8dp"/> <!-- 내부 여백 -->
+</shape>
